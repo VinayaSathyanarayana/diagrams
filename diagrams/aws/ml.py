@@ -12,6 +12,10 @@ class ApacheMxnetOnAWS(_ML):
     _icon = "apache-mxnet-on-aws.png"
 
 
+class AugmentedAi(_ML):
+    _icon = "augmented-ai.png"
+
+
 class Comprehend(_ML):
     _icon = "comprehend.png"
 
@@ -22,6 +26,10 @@ class DeepLearningAmis(_ML):
 
 class DeepLearningContainers(_ML):
     _icon = "deep-learning-containers.png"
+
+
+class Deepcomposer(_ML):
+    _icon = "deepcomposer.png"
 
 
 class Deeplens(_ML):
@@ -40,6 +48,14 @@ class Forecast(_ML):
     _icon = "forecast.png"
 
 
+class FraudDetector(_ML):
+    _icon = "fraud-detector.png"
+
+
+class Kendra(_ML):
+    _icon = "kendra.png"
+
+
 class Lex(_ML):
     _icon = "lex.png"
 
@@ -56,12 +72,32 @@ class Polly(_ML):
     _icon = "polly.png"
 
 
+class RekognitionImage(_ML):
+    _icon = "rekognition-image.png"
+
+
+class RekognitionVideo(_ML):
+    _icon = "rekognition-video.png"
+
+
 class Rekognition(_ML):
     _icon = "rekognition.png"
 
 
 class SagemakerGroundTruth(_ML):
     _icon = "sagemaker-ground-truth.png"
+
+
+class SagemakerModel(_ML):
+    _icon = "sagemaker-model.png"
+
+
+class SagemakerNotebook(_ML):
+    _icon = "sagemaker-notebook.png"
+
+
+class SagemakerTrainingJob(_ML):
+    _icon = "sagemaker-training-job.png"
 
 
 class Sagemaker(_ML):

@@ -12,6 +12,18 @@ class Circleci(_Ci):
     _icon = "circleci.png"
 
 
+class Concourseci(_Ci):
+    _icon = "concourseci.png"
+
+
+class Droneci(_Ci):
+    _icon = "droneci.png"
+
+
+class GithubActions(_Ci):
+    _icon = "github-actions.png"
+
+
 class Gitlabci(_Ci):
     _icon = "gitlabci.png"
 
@@ -35,6 +47,8 @@ class Zuulci(_Ci):
 # Aliases
 
 CircleCI = Circleci
+ConcourseCI = Concourseci
+DroneCI = Droneci
 GitlabCI = Gitlabci
 TravisCI = Travisci
 TC = Teamcity

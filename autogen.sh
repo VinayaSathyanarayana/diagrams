@@ -4,7 +4,7 @@ set -e
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("onprem" "aws" "azure" "gcp" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic" "generic")
+providers=("onprem" "aws" "azure" "gcp" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic" "generic" "openstack" "outscale" )
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
@@ -18,6 +18,11 @@ fi
 
 if ! [ -x "$(command -v convert)" ]; then
   echo 'image magick is not installed'
+  exit 1
+fi
+
+if ! [ -x "$(command -v black)" ]; then
+  echo 'black is not installed'
   exit 1
 fi
 
@@ -46,6 +51,10 @@ for pvd in "${providers[@]}"; do
   echo "generating the modules & docs for provider '$pvd'"
   python -m scripts.generate "$pvd"
 done
+
+# Generate doc for custom module
+echo "generating the docs for custom"
+python -m scripts.generate "custom"
 
 # run black
 echo "linting the all the diagram modules"
